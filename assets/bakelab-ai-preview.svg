@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+  <defs>
+    <linearGradient id="page" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf1"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#3a2924" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="820" fill="url(#page)"/>
+  <circle cx="120" cy="64" r="260" fill="#f3d6df" opacity="0.72"/>
+  <circle cx="1110" cy="720" r="300" fill="#e3efe0" opacity="0.78"/>
+
+  <rect x="72" y="56" width="1136" height="92" rx="24" fill="#fffdf8" stroke="#e7d9cf"/>
+  <rect x="105" y="82" width="50" height="50" rx="14" fill="#a43d62"/>
+  <text x="130" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">B</text>
+  <text x="176" y="101" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#3a2924">BakeLab AI</text>
+  <text x="176" y="126" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#6f7275">AI RECIPE GENERATOR</text>
+
+  <rect x="824" y="86" width="112" height="36" rx="18" fill="#fffaf1" stroke="#e7d9cf"/>
+  <text x="880" y="109" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#60785b">Pantry</text>
+  <rect x="950" y="86" width="116" height="36" rx="18" fill="#a43d62"/>
+  <text x="1008" y="109" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#ffffff">Modify</text>
+  <rect x="1080" y="86" width="98" height="36" rx="18" fill="#fffaf1" stroke="#e7d9cf"/>
+  <text x="1129" y="109" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#60785b">Save</text>
+
+  <rect x="84" y="188" width="374" height="552" rx="22" fill="#ffffff" stroke="#e7d9cf" filter="url(#shadow)"/>
+  <text x="116" y="242" font-family="Georgia, serif" font-size="40" fill="#3a2924">Customize a bake</text>
+  <text x="116" y="280" font-family="Arial, sans-serif" font-size="17" fill="#5f666b">Choose dietary swaps and get a</text>
+  <text x="116" y="307" font-family="Arial, sans-serif" font-size="17" fill="#5f666b">clear recipe with step-by-step details.</text>
+
+  <text x="116" y="368" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#3a2924">Recipe idea</text>
+  <rect x="116" y="386" width="310" height="58" rx="15" fill="#fffdf8" stroke="#e7d9cf"/>
+  <text x="138" y="422" font-family="Arial, sans-serif" font-size="17" fill="#6f7275">chocolate banana muffins</text>
+
+  <text x="116" y="494" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#3a2924">Modifications</text>
+  <rect x="116" y="514" width="132" height="44" rx="22" fill="#e3efe0" stroke="#c7d9c2"/>
+  <text x="182" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#60785b">Vegan</text>
+  <rect x="260" y="514" width="166" height="44" rx="22" fill="#f3d6df" stroke="#e8bdca"/>
+  <text x="343" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#a43d62">Gluten-free</text>
+  <rect x="116" y="574" width="150" height="44" rx="22" fill="#fffaf1" stroke="#e7d9cf"/>
+  <text x="191" y="602" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#6f7275">Less sweet</text>
+
+  <rect x="116" y="652" width="310" height="58" rx="18" fill="#a43d62"/>
+  <text x="271" y="688" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">Generate modified recipe</text>
+
+  <rect x="498" y="188" width="698" height="552" rx="22" fill="#ffffff" stroke="#e7d9cf" filter="url(#shadow)"/>
+  <text x="540" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="2" fill="#a43d62">MODIFIED RECIPE</text>
+  <text x="540" y="307" font-family="Georgia, serif" font-size="50" fill="#3a2924">Vegan Gluten-Free</text>
+  <text x="540" y="362" font-family="Georgia, serif" font-size="50" fill="#3a2924">Chocolate Muffins</text>
+
+  <rect x="540" y="402" width="132" height="42" rx="21" fill="#e3efe0" stroke="#c7d9c2"/>
+  <text x="606" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#60785b">Vegan</text>
+  <rect x="686" y="402" width="158" height="42" rx="21" fill="#f3d6df" stroke="#e8bdca"/>
+  <text x="765" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#a43d62">Gluten-free</text>
+  <rect x="858" y="402" width="154" height="42" rx="21" fill="#fffaf1" stroke="#e7d9cf"/>
+  <text x="935" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#6f7275">35 minutes</text>
+
+  <rect x="540" y="484" width="278" height="190" rx="20" fill="#fffaf1" stroke="#e7d9cf"/>
+  <text x="568" y="526" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#3a2924">Ingredient swaps</text>
+  <text x="568" y="564" font-family="Arial, sans-serif" font-size="16" fill="#5f666b">1. Almond flour blend</text>
+  <text x="568" y="596" font-family="Arial, sans-serif" font-size="16" fill="#5f666b">2. Flax egg binder</text>
+  <text x="568" y="628" font-family="Arial, sans-serif" font-size="16" fill="#5f666b">3. Coconut oil</text>
+
+  <rect x="850" y="484" width="278" height="190" rx="20" fill="#fffaf1" stroke="#e7d9cf"/>
+  <text x="878" y="526" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#3a2924">Instructions</text>
+  <text x="878" y="564" font-family="Arial, sans-serif" font-size="16" fill="#5f666b">1. Mix dry ingredients.</text>
+  <text x="878" y="596" font-family="Arial, sans-serif" font-size="16" fill="#5f666b">2. Fold in banana + oil.</text>
+  <text x="878" y="628" font-family="Arial, sans-serif" font-size="16" fill="#5f666b">3. Bake at 350°F.</text>
+</svg>
