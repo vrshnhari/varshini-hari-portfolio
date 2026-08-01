@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "Nonprofit Image Accessibility",
+    tagline: "AI - Accessibility",
+    description:
+      "Built and deployed an AI tool that turns uploaded nonprofit images into short, descriptive, and accessibility-focused alt text with file validation, character-limit enforcement, and prompt-quality evaluation.",
+    tech: ["Next.js", "Groq Vision", "Accessibility", "Vercel"],
+    accent: "var(--blue)",
+    live: "https://nonprofit-image-accessibility.vercel.app/",
+    github: "https://github.com/vrshnhari/nonprofit-image-accessibility",
+    image: "./assets/nonprofit-accessibility-preview.jpg"
+  },
+  {
     title: "Botaniq",
     tagline: "Frontend - Product design",
     description:
@@ -8,14 +19,6 @@ const projects = [
     accent: "var(--blue)",
     live: "https://botaniq-rho.vercel.app/index.html",
     github: "https://github.com/vrshnhari/Botaniq"
-  },
-  {
-    title: "Facial Emotion Detection",
-    tagline: "AI - Ethics",
-    description:
-      "Developed a facial emotion recognition model with Dlib and multiple machine-learning algorithms, comparing Decision Tree, KNN, Logistic Regression, and MLP performance while analyzing privacy, bias, and ethical risk.",
-    tech: ["Dlib", "KNN", "Logistic Regression", "MLP"],
-    accent: "var(--sage)"
   },
   {
     title: "ASL to Speech Conversion",
@@ -33,6 +36,9 @@ projectGrid.innerHTML = projects
   .map(
     (project) => `
       <article class="project-card" style="--accent: ${project.accent}">
+        ${project.image ? `<a class="project-card-image" href="${project.live}" target="_blank" rel="noreferrer">
+          <img src="${project.image}" alt="${project.title} screenshot" />
+        </a>` : ""}
         <small>${project.tagline}</small>
         <h3>${project.title}</h3>
         <p>${project.description}</p>
