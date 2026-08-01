@@ -43,6 +43,17 @@ a {
   text-decoration: none;
 }
 
+svg {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -67,6 +78,7 @@ a {
 }
 
 .brand {
+  font-family: var(--font-sans);
   font-size: 0.98rem;
   font-weight: 600;
   color: var(--blue-strong);
@@ -82,6 +94,10 @@ a {
   color: var(--muted-foreground);
   font-size: 0.875rem;
   list-style: none;
+}
+
+.nav-links a {
+  transition: color 160ms ease;
 }
 
 .nav-links a:hover {
@@ -132,15 +148,9 @@ h1 {
   line-height: 1.7;
 }
 
-.actions,
-.project-actions,
-.project-tech,
-.chips {
+.actions {
   display: flex;
   flex-wrap: wrap;
-}
-
-.actions {
   gap: 0.75rem;
   margin-top: 2.5rem;
 }
@@ -323,6 +333,8 @@ h1 {
 }
 
 .chips {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 1rem;
 }
@@ -342,6 +354,95 @@ h1 {
 .section-title {
   max-width: 42rem;
   margin-top: 1.5rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255, 250, 241, 0.74);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 160ms ease;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: 11rem;
+  height: 11rem;
+  background: var(--accent, var(--blue));
+  opacity: 0.22;
+  transform: translate(38%, -38%);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+}
+
+.project-card > * {
+  position: relative;
+}
+
+.project-card small {
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  margin-top: 0.55rem;
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+
+.project-card p {
+  margin: 1rem 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.card-actions a {
+  color: var(--blue-strong);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.card-actions a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+
+.project-tech span {
+  background: var(--muted);
+  color: rgba(47, 48, 45, 0.76);
+  padding: 0.32rem 0.65rem;
+  font-size: 0.7rem;
 }
 
 .featured-project {
@@ -396,20 +497,10 @@ h1 {
 }
 
 .project-actions {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1.7rem;
-}
-
-.project-tech {
-  gap: 0.4rem;
-  margin-top: 1.5rem;
-}
-
-.project-tech span {
-  background: var(--muted);
-  color: rgba(47, 48, 45, 0.76);
-  padding: 0.32rem 0.65rem;
-  font-size: 0.7rem;
 }
 
 .single-preview {
@@ -476,63 +567,6 @@ h1 {
   font-weight: 600;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.project-card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: rgba(255, 250, 241, 0.74);
-  padding: 1.75rem;
-  box-shadow: var(--shadow-soft);
-  transition: transform 160ms ease;
-}
-
-.project-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto auto;
-  width: 11rem;
-  height: 11rem;
-  background: var(--accent, var(--blue));
-  opacity: 0.22;
-  transform: translate(38%, -38%);
-}
-
-.project-card:hover {
-  transform: translateY(-2px);
-}
-
-.project-card > * {
-  position: relative;
-}
-
-.project-card small {
-  color: var(--muted-foreground);
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.project-card h3 {
-  margin-top: 0.55rem;
-  font-size: 1.65rem;
-  line-height: 1.2;
-}
-
-.project-card p {
-  margin: 1rem 0 0;
-  color: var(--muted-foreground);
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
-
 .contact-title {
   max-width: 42rem;
   margin-top: 1.5rem;
@@ -586,6 +620,27 @@ h1 {
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.contact-icon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--muted);
+  color: rgba(36, 48, 70, 0.72);
+}
+
+.arrow {
+  flex: 0 0 auto;
+  color: var(--muted-foreground);
+  transition: transform 160ms ease;
+}
+
+.contact-card:hover .arrow {
+  transform: translate(2px, -2px);
 }
 
 .footer {
